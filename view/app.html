@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/app.css">
     <title>Document</title>
 </head>
 <body>
     
+    <div class="container">
+
+        <header class="head">
+            <div class="navbar">
+                        <h1><a href="#home"><span>{</span> INTE 30063 : IAS <span>}</span></a></h1>
+                    <div class="right_nav">
+                        <a href="#diff">Difference</a>
+                        <a href="#W-Auth">w/ Authorization</a>
+                        <a href="#w/oAuth">w/o Authorization</a>
+                    </div>
+            </div>
+        </header>
+     
+        <section class="Home" id="home">
+            <div class="image">
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/cute-astronaut-sit-and-working-on-laptop-5738123-4789015.png?f=webp" alt="">
+            </div>
+            <div class="home-content">
+                <h1>Home Activity! <span>&#128640;</span></h1>
+                <p>Explore the website's demonstration highlighting the difference between authorized and unauthorized access.Witness how a click initiates an automatic file download, showcasing unauthorized access to a website. &#128373; </p>
+                <a href="https://docs.google.com/document/d/1MA1Cs4T_bUJvEp4pDvHlgpO8i8v3Pnmef5jYruJj8lw/view" target="_blank">Read More &#9997;</a>
+            </div>
+        </section>
+
+        <hr>
+
+         <section class="NoAuth" id="w/oAuth">
+            <div class="NoAuth-content">
+                <h1>No Authorization!</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sequi iure nemo distinctio repudiandae placeat, quam ea reprehenderit repellat autem pariatur quidem accusantium rem iste ducimus, eaque voluptates! Incidunt, omnis!</p>
+                <a href="" id="button" target="_blank">Click me! &#128128;</a>
+            </div>
+            <div class="NA-image">
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/cute-spaceman-astronaut-walking-sad-5738118-4789021.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="W-Auth" id="W-Auth">
+            <div class="WA-image">
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/cute-astronaut-meditating-5744076-4789005.png?f=webp" alt="">
+            </div>
+            <div class="W-Auth-content">
+                <h1>With Authorization!</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sequi iure nemo distinctio repudiandae placeat, quam ea reprehenderit repellat autem pariatur quidem accusantium rem iste ducimus, eaque voluptates! Incidunt, omnis!</p>
+                <a href="" id="button" target="_blank">Click me! &#128519;</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="Difference" id="diff">
+            <div class="Difference-content">
+                <div class="head-title">
+                    <h1>Difference</h1>
+                </div>
+                <div class="diff-cont">
+                    <div class="with-auth">
+                        <h4>With Authorization!</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laudantium velit asperiores facere ad accusantium ducimus dolorum, maiores tempora! </p>
+                    </div>
+                    <div class="withno-auth">
+                        <h4>Without Authorization!</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laudantium velit asperiores facere ad accusantium ducimus dolorum, maiores tempora! </p>
+                    </div>
+                </div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laudantium velit asperiores facere ad accusantium ducimus dolorum, maiores tempora!</p>
+            </div>
+            <div class="Diff-image">
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/confused-cute-astronaut-having-questions-5738125-4789013.png?f=webp" alt="">
+            </div>
+        </section> 
+    </div>
+
+    <footer class="footer">
+        <div class="footer-cont">
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#diff">Difference</a></li>
+                    <li><a href="#W-Auth">w/ Authorization</a></li>
+                    <li><a href="#w/oAuth">w/o Authorization</a></li>
+                </ul>            
+            </div>
+            <div class="info">
+                <p>Submitted by: Archer Shane D. Bigornia <span>	&#128513;</span></p>
+                <br>
+                <p>BSIT 3-4</p>
+                <p>Images used are from <a href="https://iconscout.com/" target="_blank">@IconScout</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/app.js"></script>
+    <script src="/controllers/auth.js"></script>
 </body>
 </html>
