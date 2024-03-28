@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/app.css">
+    <link rel="stylesheet" href="/public/assets/auth.css">
     <title>Document</title>
 </head>
 <body>
-    
-    <div class="container">
-
+    <div class="container" id="blur">
         <header class="head">
             <div class="navbar">
                         <h1><a href="#home"><span>{</span> INTE 30063 : IAS <span>}</span></a></h1>
@@ -37,8 +36,9 @@
          <section class="NoAuth" id="w/oAuth">
             <div class="NoAuth-content">
                 <h1>No Authorization!</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sequi iure nemo distinctio repudiandae placeat, quam ea reprehenderit repellat autem pariatur quidem accusantium rem iste ducimus, eaque voluptates! Incidunt, omnis!</p>
-                <a href="" id="button" target="_blank">Click me! &#128128;</a>
+                <p>A website without authorization offers accessibility and ease of access to everyone however these websites are vulnerable to security threats such as unauthorized access to sensitive information, spam, etc. because there are no user authentication mechanisms to verify the identity of the visitors.</p>
+                <p>By clicking the button below, you'll automatically download a file and have access to it.</p>
+                <a href="/public/assets/pup.html" id="button" class="button_NA" download>Click me! &#128128;</a>
             </div>
             <div class="NA-image">
                 <img src="https://cdn3d.iconscout.com/3d/premium/thumb/cute-spaceman-astronaut-walking-sad-5738118-4789021.png" alt="">
@@ -53,8 +53,8 @@
             </div>
             <div class="W-Auth-content">
                 <h1>With Authorization!</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sequi iure nemo distinctio repudiandae placeat, quam ea reprehenderit repellat autem pariatur quidem accusantium rem iste ducimus, eaque voluptates! Incidunt, omnis!</p>
-                <a href="" id="button" target="_blank">Click me! &#128519;</a>
+                <p>By having authorization mechanisms, you require users verification before granting them access to information. This helps enhance security by ensuring that only authorized users can access the information.</p>
+                <a href="#W-Auth" id="button" class="w_auth">Click me! &#128519;</a>
             </div>
         </section>
 
@@ -68,7 +68,7 @@
                 <div class="diff-cont">
                     <div class="with-auth">
                         <h4>With Authorization!</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore laudantium velit asperiores facere ad accusantium ducimus dolorum, maiores tempora! </p>
+                        <p></p>
                     </div>
                     <div class="withno-auth">
                         <h4>Without Authorization!</h4>
@@ -102,6 +102,44 @@
             </div>
         </div>
     </footer>
+
+    <div class="wAuth" style="display:none">
+        <button class="close">&times;</button>
+        <h2>Sorry! Authorized user only! &#128561;</h2>
+        <p>Click the button below to sign in your password and username.</p>
+        <a href="#W-Auth" class="login">Login Here!</a>
+    </div>
+
+    <div class="noAuth" style="display:none">
+        <button class="close">&times;</button>
+        <h2>OH NO!? &#128561;</h2>
+        <p>Interacting with strange buttons could result in unexpected outcomes, like encountering malicious software or falling victim to phishing scams designed to steal sensitive data.</p>
+        <a href="" class="close">It won't happen again!</a>
+    </div>
+
+        <div class="signin" style="display:none"> 
+            <button class="close" id="butones">&times;</button>
+            <div class="content">  
+                <h2>Sign In</h2> 
+                    <div class="form"> 
+                        <div class="inputBox"> 
+                            <input type="text" required> <i>Username</i> 
+                        </div> 
+                        <div class="inputBox"> 
+                            <input type="password" required> <i>Password</i> 
+                        </div> 
+                        <div class="links"> 
+                            <a href="#">Forgot Password</a> <a href="#">Signup</a> 
+                        </div>   
+                        <div class="inputBox">  
+                            <input type="submit" value="Login">  
+                        </div>     
+                    </div>     
+            </div>   
+        </div> 
+
+
+
 
     <script src="/app.js"></script>
     <script src="/controllers/auth.js"></script>

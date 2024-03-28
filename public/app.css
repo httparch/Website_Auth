@@ -71,7 +71,7 @@ section{
     padding: 10px;
 }
 
-.home-content h1{
+.home-content h1, .W-Auth-content h1{
     font-size: 3.5em;
     font-weight: 900;
     text-transform: uppercase;
@@ -81,10 +81,6 @@ section{
 }
 .home-content h1:hover{
     color:  rgb(230, 110, 12);
-}
-
-.home-content p{
-    margin-bottom: 65px;
 }
 
 .home-content a{
@@ -97,9 +93,8 @@ section{
     border-radius: 2px;
 }
 
-
-
-.home-content p{
+.home-content p, .W-Auth-content p{
+    margin-bottom: 65px;
     line-height: 25px;
     letter-spacing: 2px;
 }
@@ -135,7 +130,7 @@ section{
 }
 
 .NoAuth-content p{
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 
 .NoAuth-content p{
@@ -151,24 +146,8 @@ section{
     flex-wrap: nowrap;    
 }
 
-.W-Auth-content{
-    text-align: left;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-
 .W-Auth-content h1{
     font-size: 3em;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 75px;
-    margin-bottom: 30px;
-}
-
-.W-Auth-content p{
-    margin-bottom: 65px;
 }
 
 .W-Auth-content p{
