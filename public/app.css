@@ -1,8 +1,5 @@
 *{
-    font-family: Helvetica;
     color: #ffffff;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -201,6 +198,7 @@ section{
 .diff-cont h4{
     font-size: 1em;
     font-weight: 900;
+    color: rgb(230, 110, 12);
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 75px;
@@ -209,6 +207,19 @@ section{
 
 .head-title{
     text-align: center;
+}
+
+.Difference-content p{
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.with-auth .line{
+    border-right: solid 3px  rgb(230, 110, 12);
+}
+
+.withno-auth{
+    padding-left: 13px;
 }
 
 /* footer */
