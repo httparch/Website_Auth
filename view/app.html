@@ -11,11 +11,11 @@
     <div class="container" id="blur">
         <header class="head">
             <div class="navbar">
-                        <h1><a href="#home"><span>{</span> INTE 30063 : IAS <span>}</span></a></h1>
+                        <h1><a href="#home" class="menu"><span>{</span> INTE 30063 : IAS <span>}</span></a></h1>
                     <div class="right_nav">
-                        <a href="#diff">Difference</a>
-                        <a href="#W-Auth">w/ Authorization</a>
-                        <a href="#w/oAuth">w/o Authorization</a>
+                        <a href="#diff"  class="menu">Difference</a>
+                        <a href="#W-Auth"  class="menu">w/ Authorization</a>
+                        <a href="#w/oAuth"  class="menu">w/o Authorization</a>
                     </div>
             </div>
         </header>
@@ -27,7 +27,8 @@
             <div class="home-content">
                 <h1>Home Activity! <span>&#128640;</span></h1>
                 <p>Explore the website's demonstration highlighting the difference between authorized and unauthorized access.Witness how a click initiates an automatic file download, showcasing unauthorized access to a website. &#128373; </p>
-                <a href="https://docs.google.com/document/d/1MA1Cs4T_bUJvEp4pDvHlgpO8i8v3Pnmef5jYruJj8lw/view" target="_blank">Read More &#9997;</a>
+                <a href="https://docs.google.com/document/d/1MA1Cs4T_bUJvEp4pDvHlgpO8i8v3Pnmef5jYruJj8lw/view" target="_blank" class="inactivelink" display="style:block">Read More &#9997;</a>
+                <p1>For authorized user only!</p1>
             </div>
         </section>
 
@@ -54,7 +55,7 @@
             <div class="W-Auth-content">
                 <h1>With Authorization!</h1>
                 <p>By having authorization mechanisms, you require users verification before granting them access to information. This helps enhance security by ensuring that only authorized users can access the information.</p>
-                <a href="#W-Auth" id="button" class="w_auth">Click me! &#128519;</a>
+                <a href="#W-Auth" id="button" class="w_auth">Click me!&#128519;</a>
             </div>
         </section>
 
@@ -123,16 +124,16 @@
                 <h2>Sign In</h2> 
                     <div class="form"> 
                         <div class="inputBox"> 
-                            <input type="text" required> <i>Username</i> 
+                            <input type="text" id="textinput" required> <i>Username</i> 
                         </div> 
                         <div class="inputBox"> 
-                            <input type="password" required> <i>Password</i> 
+                            <input type="password" id="passinput" required> <i>Password</i> 
                         </div> 
                         <div class="links"> 
                             <a href="#">Forgot Password</a> <a href="#">Signup</a> 
                         </div>   
                         <div class="inputBox">  
-                            <input type="submit" value="Login">  
+                            <input type="submit" id="submit" value="Login">  
                         </div>     
                     </div>     
             </div>   
