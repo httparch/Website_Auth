@@ -14,7 +14,7 @@ function checkInput(){
         document.querySelector("#readmore").classList.remove('disabled');
 
         alert("Login successful!");
-        window.open("/public/assets/pup.html");      
+        window.open("/Website_Auth/public/assets/pup.html");      
         a++;
     }else{
         a++;
