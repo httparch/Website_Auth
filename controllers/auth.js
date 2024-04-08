@@ -15,7 +15,7 @@ function checkInput(){
         document.querySelector(".role-title").innerHTML = "admin";
         document.querySelector("#FA").innerHTML = "";
         alert("Login successful!");
-        window.open("/public/assets/pup.html");      
+        window.open("/Website_Auth/public/assets/pup.html");      
         a++;
     }else{
         a++;
@@ -57,3 +57,16 @@ function checkInput(){
 
 login.addEventListener("click", checkInput);
 
+
+// const a = document.querySelectorAll(".menu");
+// const section = document.querySelectorAll("section");
+
+// function activeMenu(){
+//     let len = section.length;
+//     while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+//     a.forEach(ltx -> ltx.classList.remove("active"));
+//     a[len].classList.add("active");
+// }
+
+// activeMenu();
+// window.addEventListener("scroll",activeMenu);
