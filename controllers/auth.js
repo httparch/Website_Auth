@@ -12,7 +12,8 @@ function checkInput(){
     if((text.value=="admin")&&pass.value=="admin123"){
         document.querySelector(".signin").style.display = "none";
         document.querySelector("#readmore").classList.remove('disabled');
-
+        document.querySelector(".role-title").innerHTML = "admin";
+        document.querySelector("#FA").innerHTML = "";
         alert("Login successful!");
         window.open("/public/assets/pup.html");      
         a++;
@@ -31,12 +32,10 @@ function checkInput(){
                 
             var currentTime = countDownTime --;
             
-            if(currentTime == 1){
+            if(currentTime <= 1){
                 document.querySelector(".w_auth").innerHTML = currentTime + " second left.";
-            }
-
-            document.querySelector(".w_auth").innerHTML = currentTime + " seconds left.";
-                
+            }else document.querySelector(".w_auth").innerHTML = currentTime + " seconds left.";
+            
                 if(currentTime < 0){
                     clearInterval(timer);
                     document.querySelector(".w_auth").classList.remove('disabled');
@@ -58,15 +57,3 @@ function checkInput(){
 
 login.addEventListener("click", checkInput);
 
-// const a = document.querySelectorAll(".menu");
-// const section = document.querySelectorAll("section");
-
-// function activeMenu(){
-//     let len = section.length;
-//     while(--len && window.scrollY + 97 < sec[len].offsetTop){}
-//     a.forEach(ltx -> ltx.classList.remove("active"));
-//     a[len].classList.add("active");
-// }
-
-// activeMenu();
-// window.addEventListener("scroll",activeMenu);

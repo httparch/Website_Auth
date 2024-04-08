@@ -16,9 +16,14 @@
                         <a href="#diff"  class="menu">Difference</a>
                         <a href="#W-Auth"  class="menu">w/ Authorization</a>
                         <a href="#w/oAuth"  class="menu">w/o Authorization</a>
+                        <a class="role-content">
+                            <h4 class="role-title">user</h4>
+                        </a>
                     </div>
             </div>
         </header>
+
+        
      
         <section class="Home" id="home">
             <div class="image">
@@ -28,7 +33,7 @@
                 <h1>Home Activity! <span>&#128640;</span></h1>
                 <p>Explore the website's demonstration highlighting the difference between authorized and unauthorized access.Witness how a click initiates an automatic file download, showcasing unauthorized access to a website. &#128373; </p>
                 <a href="https://docs.google.com/document/d/1MA1Cs4T_bUJvEp4pDvHlgpO8i8v3Pnmef5jYruJj8lw/view" id="readmore" target="_blank" class="inactivelink disabled" display="style:block">Read More &#9997;</a>
-                <p1>For authorized user only!</p1>
+                <p1 id="FA">For authorized user only!</p1>
             </div>
         </section>
 
@@ -130,7 +135,7 @@
                             <input type="password" id="passinput" required> <i>Password</i> 
                         </div> 
                         <div class="links"> 
-                            <a href="#">Forgot Password</a> <a href="#">Signup</a> 
+                            <a href="#">Forgot Password</a> <a href="#W-Auth" class="register">Signup</a> 
                         </div>   
                         <div class="inputBox">  
                             <input type="submit" id="submit" value="Login">  
@@ -138,6 +143,30 @@
                     </div>     
             </div>   
         </div> 
+
+        <div class="signin signup" id="signups" style="display:none"> 
+            <button class="close" id="butoneses">&times;</button>
+            <div class="content">  
+                <h2>Create Account</h2> 
+                    <div class="form"> 
+                        <div class="inputBox"> 
+                            <input type="text" id="regtextinput" required> <i>Username</i> 
+                        </div> 
+                        <div class="inputBox"> 
+                            <input type="password" id="regpassinput" required> <i>Password</i> 
+                        </div> 
+                        <div class="inputBox"> 
+                            <input type="password" id="conpassinput" required> <i>Confirm Password</i> 
+                        </div> 
+
+                        <div class="inputBox">  
+                            <input type="submit" id="regsubmit" value="Register">  
+                        </div>     
+                    </div>     
+            </div>   
+        </div> 
+
+
 
     <script src="/app.js"></script>
     <script src="/controllers/auth.js"></script>
