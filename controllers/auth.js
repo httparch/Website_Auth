@@ -2,14 +2,34 @@
 var text = document.querySelector("#textinput");
 var pass = document.querySelector("#passinput");
 var login = document.querySelector("#submit");
+var Register = document.querySelector("#regsubmit");
 var readme = document.querySelector(".inactivelink");
+
+var reg_user = document.querySelector("#regtextinput");
+var reg_pass = document.querySelector("#regpassinput");
+var con_pass = document.querySelector("#conpassinput");
+
+var user_holder;
+var pass_holder;
+
 let a = 0;
 
 var countDownTime = 90;
 
+function prepCreds(){
+    if(reg_pass.value==con_pass.value){
+        
+        user_holder = reg_user.value;
+        pass_holder = reg_pass.value;
+        alert("Successfully Registered!");
+        document.querySelector("#signups").style.display = "none";
+        document.querySelector(".signin").style.display = "block";
+    }else alert("Password dont match! Try again!");
+}
+
 function checkInput(){
   
-    if((text.value=="admin")&&pass.value=="admin123"){
+    if((text.value==user_holder)&&pass.value==pass_holder){
         document.querySelector(".signin").style.display = "none";
         document.querySelector("#readmore").classList.remove('disabled');
         document.querySelector(".role-title").innerHTML = "admin";
@@ -56,17 +76,4 @@ function checkInput(){
 }
 
 login.addEventListener("click", checkInput);
-
-
-// const a = document.querySelectorAll(".menu");
-// const section = document.querySelectorAll("section");
-
-// function activeMenu(){
-//     let len = section.length;
-//     while(--len && window.scrollY + 97 < sec[len].offsetTop){}
-//     a.forEach(ltx -> ltx.classList.remove("active"));
-//     a[len].classList.add("active");
-// }
-
-// activeMenu();
-// window.addEventListener("scroll",activeMenu);
+Register.addEventListener("click", prepCreds)
